@@ -1,0 +1,28 @@
+﻿@model List<Card>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Fullname</th>
+                <th>Profession</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Card profession in Model)
+            {
+                <tr>
+                    <td>@profession.Id</td>
+                    <td>@profession.Fullname</td>
+                    <td>@profession.Profession.Name</td>
+                    <td>@profession.Email</td>
+                    <td>@profession.PhoneNumber</td>
+                </tr>
+            }
+
+
+        </tbody>
+    </table>
